@@ -1,4 +1,5 @@
-﻿@{
+﻿@using Airbnb.Models
+@{
     Layout = "_Layout";
 
     string controller = ViewContext.RouteData.Values["controller"]?.ToString() ?? "";
@@ -33,6 +34,18 @@
                 </ul>
 
                 <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        @{
+                            var session = new AirBnbSession(Context.Session);
+                            int? count = session.GetMyReservationCount();
+                        }
+                        @if (count.HasValue)
+                        {
+                            <a asp-controller="Home" asp-action="Reservations"  class="btn btn-primary">
+                           Cart <span class="badge bg-secondary">@count</span>
+                           </a>
+                        }
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link @(controller == "Admin" ? "active" : "")"
                            asp-area="Admin" asp-controller="Home" asp-action="Index">Admin</a>

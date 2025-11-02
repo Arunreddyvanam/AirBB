@@ -1,0 +1,95 @@
+﻿@model Airbnb.Models.AirBnbViewModels
+@{
+    ViewData["Title"] = "My Reservations";
+}
+
+<div class="container py-5">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <div>
+            <h2 class="fw-bold mb-0 text-dark">
+                <i class="bi bi-suitcase-lg text-primary"></i> My Reservations
+            </h2>
+            <p class="text-muted mb-0">Track and manage all your booked stays</p>
+        </div>
+        <a asp-action="Index"
+           asp-route-activeLocation="@Model.ActiveLocation"
+           asp-route-activeCheckInDate="@Model.ActiveCheckInDate"
+           asp-route-activeCheckOutDate="@Model.ActiveCheckOutDate"
+           asp-route-activeNoOfGuests="@Model.ActiveNoOfGuests"
+           class="btn btn-outline-secondary rounded-pill px-4">
+            <i class="bi bi-arrow-left"></i> Back to Home
+        </a>
+    </div>
+
+    @if (Model.Reservation != null && Model.Reservation.Any())
+    {
+        <div class="card shadow-sm border-0 rounded-4">
+            <div class="card-body p-0">
+                <div class="table-responsive">
+                    <table class="table align-middle mb-0">
+                        <thead class="bg-gradient text-white" style="background: linear-gradient(90deg, #007bff, #00bfa6);">
+                            <tr>
+                                <th class="py-3 px-4">Residence</th>
+                                <th class="py-3 px-4">Location</th>
+                                <th class="py-3 px-4">Check-In</th>
+                                <th class="py-3 px-4">Check-Out</th>
+                                <th class="py-3 px-4 text-center">Guests</th>
+                                <th class="py-3 px-4 text-center">Price/Night</th>
+                                <th class="py-3 px-4 text-center">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var reservation in Model.Reservation)
+                            {
+                                <tr class="border-bottom">
+                                    <td class="px-4">
+                                        <div class="d-flex align-items-center">
+                                            <img src="~/img/@(reservation.Residence?.ResidencePicture ?? "")"
+                                                 alt="Residence" class="rounded-3 me-3" style="width:70px; height:70px; object-fit:cover;">
+                                            <div>
+                                                <h6 class="mb-0 fw-semibold">@reservation.Residence?.Name</h6>
+                                                <small class="text-muted">
+                                                    <i class="bi bi-geo-alt"></i> @reservation.Residence?.Location?.Name
+                                                </small>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="px-4 text-muted align-middle">@reservation.Residence?.Location?.Name</td>
+                                    <td class="px-4 align-middle">@reservation.ReservationStartDate.ToString("MMM dd, yyyy")</td>
+                                    <td class="px-4 align-middle">@reservation.ReservationEndDate.ToString("MMM dd, yyyy")</td>
+                                    <td class="px-4 text-center align-middle">@reservation.Residence?.GuestNumber</td>
+                                    <td class="px-4 text-center align-middle fw-bold text-success">$@reservation.Residence?.PricePerNight</td>
+                                    <td class="px-4 text-center align-middle">
+                                        <form asp-action="CancelReservation" method="post" class="d-inline">
+                                            <input type="hidden" name="reservationId" value="@reservation.ReservationId" />
+                                            <button type="submit" class="btn btn-sm btn-outline-danger rounded-pill px-3">
+                                                <i class="bi bi-x-circle"></i> Cancel
+                                            </button>
+                                        </form>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    }
+    else
+    {
+        <div class="text-center py-5">
+            <i class="bi bi-calendar-x fs-1 text-muted"></i>
+            <h4 class="fw-semibold mt-3">No Reservations Found</h4>
+            <p class="text-muted">You haven’t made any reservations yet.</p>
+            <a asp-action="Index"
+               asp-route-activeLocation="@Model.ActiveLocation"
+               asp-route-activeCheckInDate="@Model.ActiveCheckInDate"
+               asp-route-activeCheckOutDate="@Model.ActiveCheckOutDate"
+               asp-route-activeNoOfGuests="@Model.ActiveNoOfGuests"
+               class="btn btn-gradient px-5 py-2 rounded-pill text-white fw-semibold shadow-sm">
+                <i class="bi bi-search-heart"></i> Browse Residences
+            </a>
+        </div>
+    }
+</div>
+

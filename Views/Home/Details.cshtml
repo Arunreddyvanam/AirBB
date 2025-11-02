@@ -1,0 +1,78 @@
+﻿@model Airbnb.Models.AirBnbViewModels
+@{
+    ViewData["Title"] = "Residence Details";
+}
+
+<div class="container py-5">
+    <div class="card border-0 shadow-lg overflow-hidden rounded-4">
+        <!-- Header Image / Banner -->
+        <div class="position-relative">
+            <img src="~/img/@Model.Residences.ResidencePicture"
+                 alt="Residence Image" class="img-fluid w-100" style="object-fit: cover; height: 350px;">
+            <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-25 d-flex align-items-end p-4">
+                <div>
+                    <h1 class="text-white fw-bold">@Model.Residences.Name</h1>
+                    <p class="text-light mb-0"><i class="bi bi-geo-alt-fill"></i> @Model.Residences.Location?.Name</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Residence Details -->
+        <div class="card-body p-4">
+            <div class="row text-center mb-4">
+                <div class="col-md-3 mb-3 mb-md-0">
+                    <div class="border rounded-3 p-3 bg-light">
+                        <i class="bi bi-people fs-3 text-primary"></i>
+                        <p class="mb-0 fw-semibold">@Model.Residences.GuestNumber Guests</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3 mb-md-0">
+                    <div class="border rounded-3 p-3 bg-light">
+                        <i class="bi bi-door-closed fs-3 text-primary"></i>
+                        <p class="mb-0 fw-semibold">@Model.Residences.BedroomNumber Bedrooms</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3 mb-md-0">
+                    <div class="border rounded-3 p-3 bg-light">
+                        <i class="bi bi-droplet-half fs-3 text-primary"></i>
+                        <p class="mb-0 fw-semibold">@Model.Residences.BathroomNumber Bathrooms</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="border rounded-3 p-3 bg-light">
+                        <i class="bi bi-currency-dollar fs-3 text-success"></i>
+                        <p class="mb-0 fw-semibold">@Model.Residences.PricePerNight / night</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Description -->
+            <div class="mt-4">
+                <h5 class="fw-bold mb-2">About this residence</h5>
+                <p class="text-muted">
+                    Experience comfort and style in this beautifully designed residence.
+                    Perfect for families or travelers looking for a cozy and modern stay.
+                </p>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="mt-5 d-flex justify-content-between align-items-center">
+                <a asp-action="Index"
+                   asp-route-activeLocation="@Model.ActiveLocation"
+                   asp-route-activeCheckInDate="@Model.ActiveCheckInDate"
+                   asp-route-activeCheckOutDate="@Model.ActiveCheckOutDate"
+                   asp-route-activeNoOfGuests="@Model.ActiveNoOfGuests"
+                   class="btn btn-outline-secondary px-4 py-2 rounded-pill">
+                    <i class="bi bi-arrow-left"></i> Back to Home
+                </a>
+
+                <a asp-action="Reserve"
+                   asp-route-residenceId="@Model.Residences.ResidenceId"
+                   class="btn btn-gradient px-5 py-2 rounded-pill text-white fw-semibold shadow-sm">
+                    <i class="bi bi-calendar-check"></i> Reserve Now
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+

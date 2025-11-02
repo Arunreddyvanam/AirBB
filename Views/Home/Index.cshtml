@@ -1,7 +1,101 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@model Airbnb.Models.AirBnbViewModels
+
+@{
+    ViewData["Title"] = "Find Your Perfect Stay";
 }
 
-<div class="bg-img">
-    <h1 class="text-white text-center pt-5">Welcome to AirBB</h1>
+<div class="container my-5">
+    <div class="text-center mb-5">
+        <h1 class="fw-bold display-6 text-primary">Find Your Perfect Stay</h1>
+        <p class="text-muted fs-5">Discover top-rated residences across beautiful destinations.</p>
+    </div>
+
+    <div class="row g-4">
+        <!-- Filter Panel -->
+        <div class="col-lg-3">
+            <div class="card shadow-sm border-0 rounded-4">
+                <div class="card-body">
+                    <h5 class="card-title text-primary mb-4"><i class="bi bi-funnel"></i> Filters</h5>
+                    <form method="post" asp-action="Index" class="vstack gap-3">
+                        <div>
+                            <label class="form-label fw-semibold">Location</label>
+                            <select name="activeLocation" class="form-select rounded-pill">
+                                <option value="all" class="@Model.CheckActiveLocation("all")">All</option>
+                                @foreach (var loc in Model.Location)
+                                {
+                                    <option value="@loc.LocationId" selected="@(Model.ActiveLocation == loc.LocationId.ToString())">
+                                        @loc.Name
+                                    </option>
+                                }
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="form-label fw-semibold">Check-in</label>
+                            <input class="form-control rounded-pill" id="ActiveCheckInDate" name="ActiveCheckInDate"
+                                   value="@(Model.ActiveCheckInDate != "all" ? Model.ActiveCheckInDate : "")" placeholder="MM/DD/YYYY" />
+                        </div>
+
+                        <div>
+                            <label class="form-label fw-semibold">Check-out</label>
+                            <input class="form-control rounded-pill" id="ActiveCheckOutDate" name="ActiveCheckOutDate"
+                                   value="@(Model.ActiveCheckOutDate != "all" ? Model.ActiveCheckOutDate : "")" placeholder="MM/DD/YYYY" />
+                        </div>
+
+                        <div>
+                            <label class="form-label fw-semibold">Guests</label>
+                            <input type="number" min="1" class="form-control rounded-pill" id="ActiveNoOfGuests" name="ActiveNoOfGuests"
+                                   value="@(Model.ActiveNoOfGuests != "all" ? Model.ActiveNoOfGuests : "1")" />
+                        </div>
+
+                        <button type="submit" class="btn btn-primary rounded-pill mt-3 w-100 shadow-sm">
+                            <i class="bi bi-search"></i> Apply Filters
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Results Panel -->
+        <div class="col-lg-9">
+            <div class="row g-4">
+                @if (Model.Residence != null && Model.Residence.Any())
+                {
+                    @foreach (var res in Model.Residence)
+                    {
+                        <div class="col-md-6">
+                            <div class="card border-0 shadow-sm h-100 rounded-4 overflow-hidden hover-shadow">
+                                <div class="ratio ratio-4x3">
+                                    <img src="~/img/@res.ResidencePicture" class="card-img-top object-fit-cover" alt="@res.Name" />
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title text-dark fw-bold">@res.Name</h5>
+                                    <p class="text-muted mb-1"><i class="bi bi-geo-alt"></i> @res.Location.Name</p>
+                                    <p class="small text-secondary mb-2">
+                                        <i class="bi bi-people"></i> @res.GuestNumber guests ·
+                                        <i class="bi bi-door-closed"></i> @res.BedroomNumber beds ·
+                                        <i class="bi bi-droplet"></i> @res.BathroomNumber baths
+                                    </p>
+                                    <h6 class="text-primary fw-bold">$@res.PricePerNight <span class="text-muted fs-6">/ night</span></h6>
+                                    <a asp-action="Details" asp-route-residenceId="@res.ResidenceId"
+                                       class="btn btn-outline-primary rounded-pill mt-3 w-100">
+                                        View Details
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                }
+                else
+                {
+                    <div class="col-12">
+                        <div class="alert alert-info text-center py-4 rounded-4 shadow-sm">
+                            <i class="bi bi-house-slash display-6 d-block mb-2"></i>
+                            <strong>No residences found.</strong> Try adjusting your filters.
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
 </div>
