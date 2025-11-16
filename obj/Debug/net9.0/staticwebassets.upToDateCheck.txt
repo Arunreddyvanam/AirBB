@@ -18,6 +18,7 @@ C:\Users\yache\OneDrive\Desktop\Juo_J\FALL_2025\Arun\Airbnb\Airbnb\wwwroot\lib\b
 C:\Users\yache\OneDrive\Desktop\Juo_J\FALL_2025\Arun\Airbnb\Airbnb\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map
 C:\Users\yache\OneDrive\Desktop\Juo_J\FALL_2025\Arun\Airbnb\Airbnb\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css.map
 C:\Users\yache\OneDrive\Desktop\Juo_J\FALL_2025\Arun\Airbnb\Airbnb\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css
+C:\Users\yache\OneDrive\Desktop\Juo_J\FALL_2025\Arun\Airbnb\Airbnb\wwwroot\js\built-year.js
 C:\Users\yache\OneDrive\Desktop\Juo_J\FALL_2025\Arun\Airbnb\Airbnb\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css
 C:\Users\yache\OneDrive\Desktop\Juo_J\FALL_2025\Arun\Airbnb\Airbnb\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map
 C:\Users\yache\OneDrive\Desktop\Juo_J\FALL_2025\Arun\Airbnb\Airbnb\wwwroot\lib\jquery\dist\jquery.js
@@ -68,6 +69,7 @@ wwwroot\img\GoldenGate.png
 wwwroot\img\homepage.png
 wwwroot\img\LaDowntown.png
 wwwroot\img\logo.png
+wwwroot\js\built-year.js
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map

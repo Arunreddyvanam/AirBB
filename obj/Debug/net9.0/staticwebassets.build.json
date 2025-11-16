@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Ur49mVtdz9mQIB5FnSvcGsUQUwOJCjJ+47oD491+aDc=",
+  "Hash": "DvrzeWD6Sb3nsi+BGxpHcCU6+//rPyjpXkMtxlI6CHE=",
   "Source": "Airbnb",
   "BasePath": "_content/Airbnb",
   "Mode": "Default",
@@ -435,6 +435,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\yache\\OneDrive\\Desktop\\Juo_J\\FALL_2025\\Arun\\Airbnb\\Airbnb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Identity": "C:\\Users\\yache\\OneDrive\\Desktop\\Juo_J\\FALL_2025\\Arun\\Airbnb\\Airbnb\\obj\\Debug\\net9.0\\compressed\\caitoqpniu-f2yh6078l5.gz",
+      "SourceId": "Airbnb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\yache\\OneDrive\\Desktop\\Juo_J\\FALL_2025\\Arun\\Airbnb\\Airbnb\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/Airbnb",
+      "RelativePath": "js/built-year#[.{fingerprint=f2yh6078l5}]?.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\yache\\OneDrive\\Desktop\\Juo_J\\FALL_2025\\Arun\\Airbnb\\Airbnb\\wwwroot\\js\\built-year.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "9rns72svjl",
+      "Integrity": "u2l8Y7/Vl5zI/KdJhIl5TieNTAfe214TifUfueF+CwQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\yache\\OneDrive\\Desktop\\Juo_J\\FALL_2025\\Arun\\Airbnb\\Airbnb\\wwwroot\\js\\built-year.js"
     },
     {
       "Identity": "C:\\Users\\yache\\OneDrive\\Desktop\\Juo_J\\FALL_2025\\Arun\\Airbnb\\Airbnb\\obj\\Debug\\net9.0\\compressed\\cvn1t8ksjv-khv3u5hwcm.gz",
@@ -1569,6 +1590,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\logo.png"
+    },
+    {
+      "Identity": "C:\\Users\\yache\\OneDrive\\Desktop\\Juo_J\\FALL_2025\\Arun\\Airbnb\\Airbnb\\wwwroot\\js\\built-year.js",
+      "SourceId": "Airbnb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\yache\\OneDrive\\Desktop\\Juo_J\\FALL_2025\\Arun\\Airbnb\\Airbnb\\wwwroot\\",
+      "BasePath": "_content/Airbnb",
+      "RelativePath": "js/built-year#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "f2yh6078l5",
+      "Integrity": "SQOF93XE+qWJOAws9qxC5svWPhpMqtFt6V0fILrUhtI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\built-year.js"
     },
     {
       "Identity": "C:\\Users\\yache\\OneDrive\\Desktop\\Juo_J\\FALL_2025\\Arun\\Airbnb\\Airbnb\\wwwroot\\js\\site.js",
@@ -2878,7 +2920,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 12 Oct 2025 23:45:54 GMT"
+          "Value": "Sat, 15 Nov 2025 01:49:41 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2939,7 +2981,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 12 Oct 2025 23:45:54 GMT"
+          "Value": "Sat, 15 Nov 2025 01:49:41 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2984,7 +3026,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 12 Oct 2025 23:45:54 GMT"
+          "Value": "Sat, 15 Nov 2025 01:49:41 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3039,7 +3081,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 12 Oct 2025 23:45:54 GMT"
+          "Value": "Sat, 15 Nov 2025 01:49:41 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3100,7 +3142,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 12 Oct 2025 23:45:54 GMT"
+          "Value": "Sat, 15 Nov 2025 01:49:41 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3145,7 +3187,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 12 Oct 2025 23:45:54 GMT"
+          "Value": "Sat, 15 Nov 2025 01:49:41 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3200,7 +3242,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 12 Oct 2025 23:45:54 GMT"
+          "Value": "Sat, 15 Nov 2025 01:49:41 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3253,7 +3295,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 12 Oct 2025 23:45:54 GMT"
+          "Value": "Sat, 15 Nov 2025 01:49:41 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3290,7 +3332,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 12 Oct 2025 23:45:54 GMT"
+          "Value": "Sat, 15 Nov 2025 01:49:41 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3337,7 +3379,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 12 Oct 2025 23:45:54 GMT"
+          "Value": "Sat, 15 Nov 2025 01:49:41 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3390,7 +3432,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 12 Oct 2025 23:45:54 GMT"
+          "Value": "Sat, 15 Nov 2025 01:49:41 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3427,7 +3469,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 12 Oct 2025 23:45:54 GMT"
+          "Value": "Sat, 15 Nov 2025 01:49:41 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4534,6 +4576,304 @@
         {
           "Name": "integrity",
           "Value": "sha256-mNWZG2FfjfH/2j+jbmFYge0tRaFyFKCQ8ogIirFMapc="
+        }
+      ]
+    },
+    {
+      "Route": "js/built-year.f2yh6078l5.js",
+      "AssetFile": "C:\\Users\\yache\\OneDrive\\Desktop\\Juo_J\\FALL_2025\\Arun\\Airbnb\\Airbnb\\obj\\Debug\\net9.0\\compressed\\caitoqpniu-f2yh6078l5.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.003300330033"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "302"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"u2l8Y7/Vl5zI/KdJhIl5TieNTAfe214TifUfueF+CwQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 15 Nov 2025 05:35:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"SQOF93XE+qWJOAws9qxC5svWPhpMqtFt6V0fILrUhtI=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "f2yh6078l5"
+        },
+        {
+          "Name": "label",
+          "Value": "js/built-year.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-SQOF93XE+qWJOAws9qxC5svWPhpMqtFt6V0fILrUhtI="
+        }
+      ]
+    },
+    {
+      "Route": "js/built-year.f2yh6078l5.js",
+      "AssetFile": "C:\\Users\\yache\\OneDrive\\Desktop\\Juo_J\\FALL_2025\\Arun\\Airbnb\\Airbnb\\wwwroot\\js\\built-year.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "561"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SQOF93XE+qWJOAws9qxC5svWPhpMqtFt6V0fILrUhtI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 15 Nov 2025 05:35:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "f2yh6078l5"
+        },
+        {
+          "Name": "label",
+          "Value": "js/built-year.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-SQOF93XE+qWJOAws9qxC5svWPhpMqtFt6V0fILrUhtI="
+        }
+      ]
+    },
+    {
+      "Route": "js/built-year.f2yh6078l5.js.gz",
+      "AssetFile": "C:\\Users\\yache\\OneDrive\\Desktop\\Juo_J\\FALL_2025\\Arun\\Airbnb\\Airbnb\\obj\\Debug\\net9.0\\compressed\\caitoqpniu-f2yh6078l5.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "302"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"u2l8Y7/Vl5zI/KdJhIl5TieNTAfe214TifUfueF+CwQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 15 Nov 2025 05:35:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "f2yh6078l5"
+        },
+        {
+          "Name": "label",
+          "Value": "js/built-year.js.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-u2l8Y7/Vl5zI/KdJhIl5TieNTAfe214TifUfueF+CwQ="
+        }
+      ]
+    },
+    {
+      "Route": "js/built-year.js",
+      "AssetFile": "C:\\Users\\yache\\OneDrive\\Desktop\\Juo_J\\FALL_2025\\Arun\\Airbnb\\Airbnb\\obj\\Debug\\net9.0\\compressed\\caitoqpniu-f2yh6078l5.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.003300330033"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "302"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"u2l8Y7/Vl5zI/KdJhIl5TieNTAfe214TifUfueF+CwQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 15 Nov 2025 05:35:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"SQOF93XE+qWJOAws9qxC5svWPhpMqtFt6V0fILrUhtI=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-SQOF93XE+qWJOAws9qxC5svWPhpMqtFt6V0fILrUhtI="
+        }
+      ]
+    },
+    {
+      "Route": "js/built-year.js",
+      "AssetFile": "C:\\Users\\yache\\OneDrive\\Desktop\\Juo_J\\FALL_2025\\Arun\\Airbnb\\Airbnb\\wwwroot\\js\\built-year.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "561"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SQOF93XE+qWJOAws9qxC5svWPhpMqtFt6V0fILrUhtI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 15 Nov 2025 05:35:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-SQOF93XE+qWJOAws9qxC5svWPhpMqtFt6V0fILrUhtI="
+        }
+      ]
+    },
+    {
+      "Route": "js/built-year.js.gz",
+      "AssetFile": "C:\\Users\\yache\\OneDrive\\Desktop\\Juo_J\\FALL_2025\\Arun\\Airbnb\\Airbnb\\obj\\Debug\\net9.0\\compressed\\caitoqpniu-f2yh6078l5.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "302"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"u2l8Y7/Vl5zI/KdJhIl5TieNTAfe214TifUfueF+CwQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 15 Nov 2025 05:35:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-u2l8Y7/Vl5zI/KdJhIl5TieNTAfe214TifUfueF+CwQ="
         }
       ]
     },

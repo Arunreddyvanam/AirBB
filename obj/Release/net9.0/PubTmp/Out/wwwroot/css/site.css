@@ -34,3 +34,37 @@ body {
     height: 500px;
     background-size: cover;
 }
+.hover-shadow:hover {
+    transform: translateY(-4px);
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    object-fit: cover;
+}
+
+.card-title {
+    letter-spacing: 0.5px;
+}
+
+.btn-primary, .btn-outline-primary:hover {
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-gradient {
+    background: linear-gradient(90deg, #007bff, #00bfa6);
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+
+    .btn-gradient:hover {
+        background: linear-gradient(90deg, #0069d9, #00a18d);
+        transform: translateY(-2px);
+    }
+
+
+table tbody tr:hover {
+    background-color: #f8f9fa;
+    transition: 0.2s ease;
+}

@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Airbnb.Migrations
 {
     [DbContext(typeof(AirBnbContext))]
-    [Migration("20251101150127_InitialCreate")]
+    [Migration("20251116060439_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -108,11 +108,14 @@ namespace Airbnb.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("BathroomNumber")
-                        .HasColumnType("INTEGER");
+                    b.Property<decimal>("BathroomNumber")
+                        .HasColumnType("TEXT");
 
                     b.Property<int>("BedroomNumber")
                         .HasColumnType("INTEGER");
+
+                    b.Property<DateTime>("BuildYear")
+                        .HasColumnType("TEXT");
 
                     b.Property<int>("GuestNumber")
                         .HasColumnType("INTEGER");
@@ -132,9 +135,14 @@ namespace Airbnb.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
+                    b.Property<int>("UserId")
+                        .HasColumnType("INTEGER");
+
                     b.HasKey("ResidenceId");
 
                     b.HasIndex("LocationId");
+
+                    b.HasIndex("UserId");
 
                     b.ToTable("Residence");
 
@@ -142,46 +150,54 @@ namespace Airbnb.Migrations
                         new
                         {
                             ResidenceId = 1,
-                            BathroomNumber = 1,
+                            BathroomNumber = 1m,
                             BedroomNumber = 1,
+                            BuildYear = new DateTime(2003, 5, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             GuestNumber = 3,
                             LocationId = 1,
                             Name = "Golden Gate Condo",
                             PricePerNight = "140",
-                            ResidencePicture = "GoldenGate.png"
+                            ResidencePicture = "GoldenGate.png",
+                            UserId = 1
                         },
                         new
                         {
                             ResidenceId = 2,
-                            BathroomNumber = 2,
+                            BathroomNumber = 2m,
                             BedroomNumber = 2,
+                            BuildYear = new DateTime(2023, 12, 9, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             GuestNumber = 5,
                             LocationId = 2,
                             Name = "LA Downtown Loft",
                             PricePerNight = "180",
-                            ResidencePicture = "LaDowntown.png"
+                            ResidencePicture = "LaDowntown.png",
+                            UserId = 1
                         },
                         new
                         {
                             ResidenceId = 3,
-                            BathroomNumber = 2,
+                            BathroomNumber = 2m,
                             BedroomNumber = 3,
+                            BuildYear = new DateTime(2009, 11, 13, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             GuestNumber = 7,
                             LocationId = 3,
                             Name = "Dallas Ranch Home",
                             PricePerNight = "90",
-                            ResidencePicture = "DallasRanch.png"
+                            ResidencePicture = "DallasRanch.png",
+                            UserId = 2
                         },
                         new
                         {
                             ResidenceId = 4,
-                            BathroomNumber = 1,
+                            BathroomNumber = 1m,
                             BedroomNumber = 2,
+                            BuildYear = new DateTime(2002, 9, 14, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             GuestNumber = 4,
                             LocationId = 4,
                             Name = "Boston Harbor Apartment",
                             PricePerNight = "110",
-                            ResidencePicture = "BostonHarbor.png"
+                            ResidencePicture = "BostonHarbor.png",
+                            UserId = 3
                         });
                 });
 
@@ -191,12 +207,10 @@ namespace Airbnb.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("DOB")
-                        .IsRequired()
+                    b.Property<DateTime>("DOB")
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Email")
-                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Name")
@@ -204,6 +218,13 @@ namespace Airbnb.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<string>("PhoneNumber")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("SSN")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("UserType")
                         .IsRequired()
                         .HasColumnType("TEXT");
 
@@ -215,26 +236,32 @@ namespace Airbnb.Migrations
                         new
                         {
                             UserId = 1,
-                            DOB = "03/15/1998",
+                            DOB = new DateTime(2003, 5, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "michael.green@airbnb.com",
                             Name = "Michael Green",
-                            PhoneNumber = "201-101-2020"
+                            PhoneNumber = "201-101-2020",
+                            SSN = "343-466-6262",
+                            UserType = "Owner"
                         },
                         new
                         {
                             UserId = 2,
-                            DOB = "11/22/1999",
+                            DOB = new DateTime(2009, 11, 13, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "sophia.lee@airbnb.com",
                             Name = "Sophia Lee",
-                            PhoneNumber = "241-303-4040"
+                            PhoneNumber = "241-303-4040",
+                            SSN = "343-466-8978",
+                            UserType = "Client"
                         },
                         new
                         {
                             UserId = 3,
-                            DOB = "08/09/2001",
+                            DOB = new DateTime(1990, 12, 13, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "david.carter@airbnb.com",
                             Name = "David Carter",
-                            PhoneNumber = "608-505-6060"
+                            PhoneNumber = "608-505-6060",
+                            SSN = "343-466-5656",
+                            UserType = "Admin"
                         });
                 });
 
@@ -257,7 +284,15 @@ namespace Airbnb.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("Airbnb.Models.User", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.Navigation("Location");
+
+                    b.Navigation("User");
                 });
 #pragma warning restore 612, 618
         }

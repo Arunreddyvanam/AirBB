@@ -1,0 +1,52 @@
+﻿@model Airbnb.Models.Location
+@{
+    string title = ViewBag.Action + " Location";
+    ViewData["Title"] = title;
+}
+
+<div class="container py-5 d-flex justify-content-center">
+    <div class="card border-0 shadow-lg rounded-4" style="max-width: 700px; width: 100%;">
+
+        <!-- Header Banner -->
+        <div class="position-relative">
+            <div class="bg-primary" style="height: 180px;"></div>
+            <div class="position-absolute bottom-0 start-0 p-4">
+                <h2 class="text-white fw-bold">@title</h2>
+                <p class="text-light mb-0">Update your location details below.</p>
+            </div>
+        </div>
+
+        <!-- Form Body -->
+        <div class="card-body p-4">
+            <form asp-action="Edit" method="post">
+                <div asp-validation-summary="All" class="text-danger mb-3"></div>
+
+                <!-- Name -->
+                <div class="mb-4">
+                    <label asp-for="Name" class="form-label fw-semibold">Location Name</label>
+                    <input asp-for="Name" class="form-control rounded-3 shadow-sm" placeholder="Enter location name..." />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+
+                <input type="hidden" asp-for="LocationId" />
+
+                <div class="mt-4 d-flex justify-content-between">
+
+                    <!-- Cancel -->
+                    <a asp-controller="ManageLocation"
+                       asp-action="Index"
+                       class="btn btn-outline-secondary px-4 py-2 rounded-pill">
+                        <i class="bi bi-x-circle"></i> Cancel
+                    </a>
+
+                    <!-- Save -->
+                    <button type="submit" class="btn btn-primary px-5 py-2 rounded-pill shadow-sm">
+                        <i class="bi bi-check-circle"></i> Save
+                    </button>
+
+                </div>
+            </form>
+        </div>
+
+    </div>
+</div>

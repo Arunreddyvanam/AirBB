@@ -16,9 +16,28 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="navbar-nav navbar-right">
-                <a class="nav-link"
-                   asp-area="" asp-controller="Home" asp-action="Index">Site</a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="Admin" asp-controller="Home" asp-action="Index">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="Admin" asp-controller="ManageLocation" asp-action="Index">Manage Location</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="Admin" asp-controller="ManageResidence" asp-action="Index">Manage Residence</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="Admin" asp-controller="ManageUser" asp-action="Index">Manage User</a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link @(controller == "Home" ? "active" : "")"
+                           asp-area="" asp-controller="Home" asp-action="Index">View Site</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>

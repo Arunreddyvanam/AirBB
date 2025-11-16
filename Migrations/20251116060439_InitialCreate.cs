@@ -33,9 +33,11 @@ namespace Airbnb.Migrations
                     UserId = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
                     Name = table.Column<string>(type: "TEXT", nullable: false),
-                    PhoneNumber = table.Column<string>(type: "TEXT", nullable: false),
-                    Email = table.Column<string>(type: "TEXT", nullable: false),
-                    DOB = table.Column<string>(type: "TEXT", nullable: false)
+                    SSN = table.Column<string>(type: "TEXT", nullable: false),
+                    PhoneNumber = table.Column<string>(type: "TEXT", nullable: true),
+                    Email = table.Column<string>(type: "TEXT", nullable: true),
+                    DOB = table.Column<DateTime>(type: "TEXT", nullable: false),
+                    UserType = table.Column<string>(type: "TEXT", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -52,9 +54,11 @@ namespace Airbnb.Migrations
                     ResidencePicture = table.Column<string>(type: "TEXT", nullable: false),
                     GuestNumber = table.Column<int>(type: "INTEGER", nullable: false),
                     BedroomNumber = table.Column<int>(type: "INTEGER", nullable: false),
-                    BathroomNumber = table.Column<int>(type: "INTEGER", nullable: false),
+                    BathroomNumber = table.Column<decimal>(type: "TEXT", nullable: false),
                     PricePerNight = table.Column<string>(type: "TEXT", nullable: false),
-                    LocationId = table.Column<int>(type: "INTEGER", nullable: false)
+                    BuildYear = table.Column<DateTime>(type: "TEXT", nullable: false),
+                    LocationId = table.Column<int>(type: "INTEGER", nullable: false),
+                    UserId = table.Column<int>(type: "INTEGER", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -64,6 +68,12 @@ namespace Airbnb.Migrations
                         column: x => x.LocationId,
                         principalTable: "Location",
                         principalColumn: "LocationId",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_Residence_User_UserId",
+                        column: x => x.UserId,
+                        principalTable: "User",
+                        principalColumn: "UserId",
                         onDelete: ReferentialAction.Cascade);
                 });
 
@@ -101,23 +111,23 @@ namespace Airbnb.Migrations
 
             migrationBuilder.InsertData(
                 table: "User",
-                columns: new[] { "UserId", "DOB", "Email", "Name", "PhoneNumber" },
+                columns: new[] { "UserId", "DOB", "Email", "Name", "PhoneNumber", "SSN", "UserType" },
                 values: new object[,]
                 {
-                    { 1, "03/15/1998", "michael.green@airbnb.com", "Michael Green", "201-101-2020" },
-                    { 2, "11/22/1999", "sophia.lee@airbnb.com", "Sophia Lee", "241-303-4040" },
-                    { 3, "08/09/2001", "david.carter@airbnb.com", "David Carter", "608-505-6060" }
+                    { 1, new DateTime(2003, 5, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "michael.green@airbnb.com", "Michael Green", "201-101-2020", "343-466-6262", "Owner" },
+                    { 2, new DateTime(2009, 11, 13, 0, 0, 0, 0, DateTimeKind.Unspecified), "sophia.lee@airbnb.com", "Sophia Lee", "241-303-4040", "343-466-8978", "Client" },
+                    { 3, new DateTime(1990, 12, 13, 0, 0, 0, 0, DateTimeKind.Unspecified), "david.carter@airbnb.com", "David Carter", "608-505-6060", "343-466-5656", "Admin" }
                 });
 
             migrationBuilder.InsertData(
                 table: "Residence",
-                columns: new[] { "ResidenceId", "BathroomNumber", "BedroomNumber", "GuestNumber", "LocationId", "Name", "PricePerNight", "ResidencePicture" },
+                columns: new[] { "ResidenceId", "BathroomNumber", "BedroomNumber", "BuildYear", "GuestNumber", "LocationId", "Name", "PricePerNight", "ResidencePicture", "UserId" },
                 values: new object[,]
                 {
-                    { 1, 1, 1, 3, 1, "Golden Gate Condo", "140", "GoldenGate.png" },
-                    { 2, 2, 2, 5, 2, "LA Downtown Loft", "180", "LaDowntown.png" },
-                    { 3, 2, 3, 7, 3, "Dallas Ranch Home", "90", "DallasRanch.png" },
-                    { 4, 1, 2, 4, 4, "Boston Harbor Apartment", "110", "BostonHarbor.png" }
+                    { 1, 1m, 1, new DateTime(2003, 5, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 3, 1, "Golden Gate Condo", "140", "GoldenGate.png", 1 },
+                    { 2, 2m, 2, new DateTime(2023, 12, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), 5, 2, "LA Downtown Loft", "180", "LaDowntown.png", 1 },
+                    { 3, 2m, 3, new DateTime(2009, 11, 13, 0, 0, 0, 0, DateTimeKind.Unspecified), 7, 3, "Dallas Ranch Home", "90", "DallasRanch.png", 2 },
+                    { 4, 1m, 2, new DateTime(2002, 9, 14, 0, 0, 0, 0, DateTimeKind.Unspecified), 4, 4, "Boston Harbor Apartment", "110", "BostonHarbor.png", 3 }
                 });
 
             migrationBuilder.InsertData(
@@ -139,6 +149,11 @@ namespace Airbnb.Migrations
                 name: "IX_Residence_LocationId",
                 table: "Residence",
                 column: "LocationId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Residence_UserId",
+                table: "Residence",
+                column: "UserId");
         }
 
         /// <inheritdoc />
@@ -148,13 +163,13 @@ namespace Airbnb.Migrations
                 name: "Reservation");
 
             migrationBuilder.DropTable(
-                name: "User");
-
-            migrationBuilder.DropTable(
                 name: "Residence");
 
             migrationBuilder.DropTable(
                 name: "Location");
+
+            migrationBuilder.DropTable(
+                name: "User");
         }
     }
 }

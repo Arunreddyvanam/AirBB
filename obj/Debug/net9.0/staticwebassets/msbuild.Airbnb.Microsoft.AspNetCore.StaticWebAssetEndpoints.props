@@ -4,13 +4,13 @@
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Airbnb.0ihtx7l8qy.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"0ihtx7l8qy"},{"Name":"integrity","Value":"sha256-KHUSTiKhW1nhWbLWAt7rQzGkam1rdYnj7nxxHqpFRyQ="},{"Name":"label","Value":"_content/Airbnb/Airbnb.bundle.scp.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1124"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022KHUSTiKhW1nhWbLWAt7rQzGkam1rdYnj7nxxHqpFRyQ=\u0022"},{"Name":"Last-Modified","Value":"Sun, 12 Oct 2025 23:45:54 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1124"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022KHUSTiKhW1nhWbLWAt7rQzGkam1rdYnj7nxxHqpFRyQ=\u0022"},{"Name":"Last-Modified","Value":"Sat, 15 Nov 2025 01:49:41 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Airbnb/Airbnb.bundle.scp.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Airbnb.0ihtx7l8qy.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-KHUSTiKhW1nhWbLWAt7rQzGkam1rdYnj7nxxHqpFRyQ="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1124"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022KHUSTiKhW1nhWbLWAt7rQzGkam1rdYnj7nxxHqpFRyQ=\u0022"},{"Name":"Last-Modified","Value":"Sun, 12 Oct 2025 23:45:54 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1124"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022KHUSTiKhW1nhWbLWAt7rQzGkam1rdYnj7nxxHqpFRyQ=\u0022"},{"Name":"Last-Modified","Value":"Sat, 15 Nov 2025 01:49:41 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Airbnb/css/site.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
@@ -107,6 +107,18 @@
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-mNWZG2FfjfH/2j\u002BjbmFYge0tRaFyFKCQ8ogIirFMapc="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"26485"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022mNWZG2FfjfH/2j\u002BjbmFYge0tRaFyFKCQ8ogIirFMapc=\u0022"},{"Name":"Last-Modified","Value":"Sun, 12 Oct 2025 23:29:45 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Airbnb/js/built-year.f2yh6078l5.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\built-year.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"f2yh6078l5"},{"Name":"integrity","Value":"sha256-SQOF93XE\u002BqWJOAws9qxC5svWPhpMqtFt6V0fILrUhtI="},{"Name":"label","Value":"_content/Airbnb/js/built-year.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"561"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022SQOF93XE\u002BqWJOAws9qxC5svWPhpMqtFt6V0fILrUhtI=\u0022"},{"Name":"Last-Modified","Value":"Sat, 15 Nov 2025 05:35:13 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Airbnb/js/built-year.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\built-year.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-SQOF93XE\u002BqWJOAws9qxC5svWPhpMqtFt6V0fILrUhtI="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"561"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022SQOF93XE\u002BqWJOAws9qxC5svWPhpMqtFt6V0fILrUhtI=\u0022"},{"Name":"Last-Modified","Value":"Sat, 15 Nov 2025 05:35:13 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Airbnb/js/site.jn12z9jigx.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</AssetFile>

@@ -12,17 +12,17 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-KHUSTiKhW1nhWbLWAt7rQzGkam1rdYnj7nxxHqpFRyQ="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1124"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022KHUSTiKhW1nhWbLWAt7rQzGkam1rdYnj7nxxHqpFRyQ=\u0022"},{"Name":"Last-Modified","Value":"Mon, 13 Oct 2025 02:05:45 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/Airbnb/css/site.9ksh2v2lbo.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"9ksh2v2lbo"},{"Name":"integrity","Value":"sha256-2SjOvpM71\u002B4gt2sT/pSWlbl/9C84uXjVtjKUErYfOXc="},{"Name":"label","Value":"_content/Airbnb/css/site.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"779"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00222SjOvpM71\u002B4gt2sT/pSWlbl/9C84uXjVtjKUErYfOXc=\u0022"},{"Name":"Last-Modified","Value":"Mon, 13 Oct 2025 00:51:30 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Airbnb/css/site.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-2SjOvpM71\u002B4gt2sT/pSWlbl/9C84uXjVtjKUErYfOXc="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"779"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00222SjOvpM71\u002B4gt2sT/pSWlbl/9C84uXjVtjKUErYfOXc=\u0022"},{"Name":"Last-Modified","Value":"Mon, 13 Oct 2025 00:51:30 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-gccDYOVae7i66L/dY4lNVj/qrpZoBE8lLE2sJVoM71I="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1464"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022gccDYOVae7i66L/dY4lNVj/qrpZoBE8lLE2sJVoM71I=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Nov 2025 14:13:25 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Airbnb/css/site.vo0whvivne.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"vo0whvivne"},{"Name":"integrity","Value":"sha256-gccDYOVae7i66L/dY4lNVj/qrpZoBE8lLE2sJVoM71I="},{"Name":"label","Value":"_content/Airbnb/css/site.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1464"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022gccDYOVae7i66L/dY4lNVj/qrpZoBE8lLE2sJVoM71I=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Nov 2025 14:13:25 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Airbnb/favicon.61n19gt1b8.ico">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\favicon.ico'))</AssetFile>
@@ -36,6 +36,42 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Jtxf9L\u002B5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"5430"},{"Name":"Content-Type","Value":"image/x-icon"},{"Name":"ETag","Value":"\u0022Jtxf9L\u002B5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=\u0022"},{"Name":"Last-Modified","Value":"Sun, 12 Oct 2025 23:21:03 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Airbnb/img/BostonHarbor.4an5u5cvks.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\BostonHarbor.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"4an5u5cvks"},{"Name":"integrity","Value":"sha256-5GhT8gXJH7bZBowPxt0D3DDtzMhWTJD505Vn2RK9SI0="},{"Name":"label","Value":"_content/Airbnb/img/BostonHarbor.png"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"377484"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u00225GhT8gXJH7bZBowPxt0D3DDtzMhWTJD505Vn2RK9SI0=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Nov 2025 05:44:11 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Airbnb/img/BostonHarbor.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\BostonHarbor.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-5GhT8gXJH7bZBowPxt0D3DDtzMhWTJD505Vn2RK9SI0="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"377484"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u00225GhT8gXJH7bZBowPxt0D3DDtzMhWTJD505Vn2RK9SI0=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Nov 2025 05:44:11 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Airbnb/img/DallasRanch.o5cvcihs2o.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\DallasRanch.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"o5cvcihs2o"},{"Name":"integrity","Value":"sha256-THNaoPGk79Ea6kx5Jw7O1SqmzgLDYd3LqFb2GsqEuOo="},{"Name":"label","Value":"_content/Airbnb/img/DallasRanch.png"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"416863"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022THNaoPGk79Ea6kx5Jw7O1SqmzgLDYd3LqFb2GsqEuOo=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Nov 2025 05:45:10 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Airbnb/img/DallasRanch.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\DallasRanch.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-THNaoPGk79Ea6kx5Jw7O1SqmzgLDYd3LqFb2GsqEuOo="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"416863"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022THNaoPGk79Ea6kx5Jw7O1SqmzgLDYd3LqFb2GsqEuOo=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Nov 2025 05:45:10 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Airbnb/img/GoldenGate.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\GoldenGate.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-p8NHBs8G\u002Bo\u002BRWUAlCUYmneL2H8YcwhpFniu04CtDDIE="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"376375"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022p8NHBs8G\u002Bo\u002BRWUAlCUYmneL2H8YcwhpFniu04CtDDIE=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Nov 2025 05:46:40 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Airbnb/img/GoldenGate.tzdi58m6lo.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\GoldenGate.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"tzdi58m6lo"},{"Name":"integrity","Value":"sha256-p8NHBs8G\u002Bo\u002BRWUAlCUYmneL2H8YcwhpFniu04CtDDIE="},{"Name":"label","Value":"_content/Airbnb/img/GoldenGate.png"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"376375"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022p8NHBs8G\u002Bo\u002BRWUAlCUYmneL2H8YcwhpFniu04CtDDIE=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Nov 2025 05:46:40 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Airbnb/img/homepage.pjjlmyfzey.png">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\homepage.png'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
@@ -47,6 +83,18 @@
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-y1sYKXuMGzWic/V0R\u002Bf0U8oNp0Navc0QFQkRoSBQle8="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"2060519"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022y1sYKXuMGzWic/V0R\u002Bf0U8oNp0Navc0QFQkRoSBQle8=\u0022"},{"Name":"Last-Modified","Value":"Mon, 13 Oct 2025 00:51:02 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Airbnb/img/LaDowntown.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\LaDowntown.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-tUR1x0DoWpgFA5wWR8VShCXPkeFgG1l3F0SOJvNqu08="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"262751"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022tUR1x0DoWpgFA5wWR8VShCXPkeFgG1l3F0SOJvNqu08=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Nov 2025 05:45:54 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Airbnb/img/LaDowntown.pzj2nrjqan.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\LaDowntown.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"pzj2nrjqan"},{"Name":"integrity","Value":"sha256-tUR1x0DoWpgFA5wWR8VShCXPkeFgG1l3F0SOJvNqu08="},{"Name":"label","Value":"_content/Airbnb/img/LaDowntown.png"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"262751"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022tUR1x0DoWpgFA5wWR8VShCXPkeFgG1l3F0SOJvNqu08=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Nov 2025 05:45:54 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Airbnb/img/logo.45vvr86wsq.png">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\logo.png'))</AssetFile>
@@ -60,17 +108,29 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-mNWZG2FfjfH/2j\u002BjbmFYge0tRaFyFKCQ8ogIirFMapc="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"26485"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022mNWZG2FfjfH/2j\u002BjbmFYge0tRaFyFKCQ8ogIirFMapc=\u0022"},{"Name":"Last-Modified","Value":"Sun, 12 Oct 2025 23:29:45 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Airbnb/js/built-year.f2yh6078l5.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\built-year.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"f2yh6078l5"},{"Name":"integrity","Value":"sha256-SQOF93XE\u002BqWJOAws9qxC5svWPhpMqtFt6V0fILrUhtI="},{"Name":"label","Value":"_content/Airbnb/js/built-year.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"561"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022SQOF93XE\u002BqWJOAws9qxC5svWPhpMqtFt6V0fILrUhtI=\u0022"},{"Name":"Last-Modified","Value":"Sat, 15 Nov 2025 05:35:13 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Airbnb/js/built-year.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\built-year.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-SQOF93XE\u002BqWJOAws9qxC5svWPhpMqtFt6V0fILrUhtI="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"561"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022SQOF93XE\u002BqWJOAws9qxC5svWPhpMqtFt6V0fILrUhtI=\u0022"},{"Name":"Last-Modified","Value":"Sat, 15 Nov 2025 05:35:13 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Airbnb/js/site.jn12z9jigx.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"jn12z9jigx"},{"Name":"integrity","Value":"sha256-IRQrSpv7To7vs5ecnvZUXHW1g/5l/QlqyWxxk6H5zgI="},{"Name":"label","Value":"_content/Airbnb/js/site.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"806"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022IRQrSpv7To7vs5ecnvZUXHW1g/5l/QlqyWxxk6H5zgI=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Nov 2025 14:52:56 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Airbnb/js/site.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"231"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo=\u0022"},{"Name":"Last-Modified","Value":"Sun, 12 Oct 2025 23:21:03 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/Airbnb/js/site.xtxxf3hu2r.js">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"xtxxf3hu2r"},{"Name":"integrity","Value":"sha256-hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo="},{"Name":"label","Value":"_content/Airbnb/js/site.js"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"231"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo=\u0022"},{"Name":"Last-Modified","Value":"Sun, 12 Oct 2025 23:21:03 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-IRQrSpv7To7vs5ecnvZUXHW1g/5l/QlqyWxxk6H5zgI="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"806"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022IRQrSpv7To7vs5ecnvZUXHW1g/5l/QlqyWxxk6H5zgI=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Nov 2025 14:52:56 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Airbnb/lib/bootstrap/dist/css/bootstrap-grid.bqjiyaj88i.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\bootstrap-grid.css'))</AssetFile>

@@ -37,6 +37,10 @@
       "PackagePath": "staticwebassets\\img\\logo.png"
     },
     {
+      "Id": "C:\\Users\\yache\\OneDrive\\Desktop\\Juo_J\\FALL_2025\\Arun\\Airbnb\\Airbnb\\wwwroot\\js\\built-year.js",
+      "PackagePath": "staticwebassets\\js\\built-year.js"
+    },
+    {
       "Id": "C:\\Users\\yache\\OneDrive\\Desktop\\Juo_J\\FALL_2025\\Arun\\Airbnb\\Airbnb\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

@@ -44,7 +44,9 @@ namespace Airbnb.Models
                     Name = "Michael Green",
                     PhoneNumber = "201-101-2020",
                     Email = "michael.green@airbnb.com",
-                    DOB = "03/15/1998"
+                    DOB = new DateTime(2003, 5, 2),
+                    SSN = "343-466-6262",
+                    UserType = "Owner"
                 },
                 new User
                 {
@@ -52,7 +54,9 @@ namespace Airbnb.Models
                     Name = "Sophia Lee",
                     PhoneNumber = "241-303-4040",
                     Email = "sophia.lee@airbnb.com",
-                    DOB = "11/22/1999"
+                    DOB = new DateTime(2009, 11, 13),
+                    SSN = "343-466-8978",
+                    UserType = "Client"
                 },
                 new User
                 {
@@ -60,7 +64,9 @@ namespace Airbnb.Models
                     Name = "David Carter",
                     PhoneNumber = "608-505-6060",
                     Email = "david.carter@airbnb.com",
-                    DOB = "08/09/2001"
+                    DOB = new DateTime(1990, 12, 13),
+                    SSN = "343-466-5656",
+                    UserType = "Admin"
                 }
             );
 
@@ -74,7 +80,9 @@ namespace Airbnb.Models
                     GuestNumber = 3,
                     BedroomNumber = 1,
                     BathroomNumber = 1,
-                    PricePerNight = "140"
+                    PricePerNight = "140",
+                    BuildYear = new DateTime(2003, 5, 2),
+                    UserId = 1,
                 },
                 new Residence
                 {
@@ -85,7 +93,9 @@ namespace Airbnb.Models
                     GuestNumber = 5,
                     BedroomNumber = 2,
                     BathroomNumber = 2,
-                    PricePerNight = "180"
+                    PricePerNight = "180",
+                    BuildYear = new DateTime(2023, 12, 9),
+                    UserId = 1,
                 },
                 new Residence
                 {
@@ -96,7 +106,9 @@ namespace Airbnb.Models
                     GuestNumber = 7,
                     BedroomNumber = 3,
                     BathroomNumber = 2,
-                    PricePerNight = "90"
+                    PricePerNight = "90",
+                    BuildYear = new DateTime(2009, 11, 13),
+                    UserId = 2,
                 },
                 new Residence
                 {
@@ -107,7 +119,9 @@ namespace Airbnb.Models
                     GuestNumber = 4,
                     BedroomNumber = 2,
                     BathroomNumber = 1,
-                    PricePerNight = "110"
+                    PricePerNight = "110",
+                    BuildYear = new DateTime(2002, 09, 14),
+                    UserId = 3,
                 }
             );
 

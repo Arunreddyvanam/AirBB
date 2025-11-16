@@ -1,0 +1,90 @@
+﻿@model Airbnb.Models.User
+@{
+    string title = ViewBag.Action + " User";
+    ViewData["Title"] = title;
+}
+
+<div class="container py-5 d-flex justify-content-center">
+    <div class="card border-0 shadow-lg rounded-4" style="max-width: 700px; width: 100%;">
+
+        <!-- Header Banner -->
+        <div class="position-relative">
+            <div class="bg-primary" style="height: 180px;"></div>
+            <div class="position-absolute bottom-0 start-0 p-4">
+                <h2 class="text-white fw-bold">@title</h2>
+                <p class="text-light mb-0">Update your user details below.</p>
+            </div>
+        </div>
+
+        <!-- Form Body -->
+        <div class="card-body p-4">
+            <form asp-action="Edit" method="post">
+                <div asp-validation-summary="All" class="text-danger mb-3"></div>
+
+                <!-- Name -->
+                <div class="mb-3">
+                    <label asp-for="Name" class="form-label fw-semibold">Full Name</label>
+                    <input asp-for="Name" class="form-control rounded-3 shadow-sm" placeholder="Enter full name..." />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+
+                <!-- SSN -->
+                <div class="mb-3">
+                    <label asp-for="SSN" class="form-label fw-semibold">SSN</label>
+                    <input asp-for="SSN" class="form-control rounded-3 shadow-sm" placeholder="Enter SSN..." />
+                    <span asp-validation-for="SSN" class="text-danger"></span>
+                </div>
+
+                <!-- PhoneNumber -->
+                <div class="mb-3">
+                    <label asp-for="PhoneNumber" class="form-label fw-semibold">Phone Number</label>
+                    <input asp-for="PhoneNumber" class="form-control rounded-3 shadow-sm" placeholder="Enter phone number..." />
+                    <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+                </div>
+
+                <!-- Email -->
+                <div class="mb-3">
+                    <label asp-for="Email" class="form-label fw-semibold">Email</label>
+                    <input asp-for="Email" class="form-control rounded-3 shadow-sm" placeholder="Enter email..." />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+
+                <!-- DOB -->
+                <div class="mb-3">
+                    <label asp-for="DOB" class="form-label fw-semibold">Date of Birth</label>
+                    <input asp-for="DOB" type="date" class="form-control rounded-3 shadow-sm" />
+                    <span asp-validation-for="DOB" class="text-danger"></span>
+                </div>
+
+                <!-- UserType -->
+                <div class="mb-3">
+                    <label asp-for="UserType" class="form-label fw-semibold">User Type</label>
+                    <select asp-for="UserType" class="form-select rounded-3 shadow-sm">
+                        <option value="">Select a user type</option>
+                        <option value="Owner">Owner</option>
+                        <option value="Customer">Customer</option>
+                        <option value="Admin">Admin</option>
+                    </select>
+                    <span asp-validation-for="UserType" class="text-danger"></span>
+                </div>
+
+                <input type="hidden" asp-for="UserId" />
+
+                <div class="mt-4 d-flex justify-content-between">
+                    <!-- Cancel -->
+                    <a asp-controller="ManageUser"
+                       asp-action="Index"
+                       class="btn btn-outline-secondary px-4 py-2 rounded-pill">
+                        <i class="bi bi-x-circle"></i> Cancel
+                    </a>
+
+                    <!-- Save -->
+                    <button type="submit" class="btn btn-primary px-5 py-2 rounded-pill shadow-sm">
+                        <i class="bi bi-check-circle"></i> Save
+                    </button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>

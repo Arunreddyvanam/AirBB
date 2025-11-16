@@ -9,13 +9,18 @@ namespace Airbnb.Models
         [Required(ErrorMessage = "Enter a Name.")]
         public string Name { get; set; } = string.Empty;
 
-        [Required(ErrorMessage = "Enter a PhoneNumber.")]
-        public string PhoneNumber { get; set; } = string.Empty;
-
-        [Required(ErrorMessage = "Enter a Email.")]
-        public string Email { get; set; } = string.Empty;
+        [Required(ErrorMessage = "Enter a SSN.")]
+        public string SSN { get; set; } = string.Empty;
+        public string? PhoneNumber { get; set; }
+        public string? Email { get; set; }
 
         [Required(ErrorMessage = "Enter a DOB.")]
-        public string DOB { get; set; } = string.Empty;
+        public DateTime? DOB { get; set; }
+        
+        [Required(ErrorMessage = "Enter a UserType.")]
+        public string UserType { get; set; } = string.Empty;
+
+        [ContactRequired] // Apply the custom validation
+        public string ContactCheck => $"{PhoneNumber}-{Email}";
     }
 }
